@@ -105,7 +105,7 @@ app = FastAPI(
 # Gắn CORS vào chính app chứa routes để xử lý preflight OPTIONS từ trình duyệt.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "https://du-doan-alzheimer.onrender.com"],
     allow_credentials=False,
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
